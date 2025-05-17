@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --color-merah: #560216;
+  --color-kulit: #dcb4ae;
+}

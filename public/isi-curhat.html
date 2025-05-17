@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Isi Curhatan</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="bg-merah">
+    <nav class="w-[90%] mx-auto flex gap-2 items-start mb-4">
+      <img src="./img/logo-unm.png" alt="" class="w-12" />
+      <img src="./img/logo-konselor.png" alt="" class="w-9 my-auto" />
+      <p class="my-auto font-bold text-white">STECU</p>
+    </nav>
+    <div class="teks w-[90%] mx-auto text-center font-semibold text-white">
+      <h1 class="text-4xl mb-4">Kirim Curhatan Anda</h1>
+      <h2 class="text-lg mb-4">“Surat Anda, Rahasia Kami”</h2>
+    </div>
+    <div class="relative min-h-screen flex items-center justify-center">
+      <div class="absolute inset-0">
+        <img
+          src="./img/website-portal.png"
+          alt=""
+          class="w-full h-full object-cover opacity-20"
+        />
+      </div>
+      <div class="relative z-10 w-[90%] md:w-[60%] mx-auto">
+        <div>
+          <div class="mb-4">
+            <input
+              type="email"
+              name="inisial"
+              id="inisial"
+              placeholder="Masukkan inisial"
+              class="w-full p-2 rounded bg-white"
+            />
+          </div>
+          <div class="mb-4">
+            <textarea
+              id="isi_curhatan"
+              name="isi_curhatan"
+              placeholder="Masukkan isi curhatan"
+              oninput="this.style.height = 'auto'; this.style.height = (this.scrollHeight) + 'px';"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 h-auto"
+              required
+            ></textarea>
+          </div>
+          <div class="mb-4">
+            <a
+              href="listcurhat-siswa.html"
+              class="bg-merah/80 block text-center hover:bg-merah border-white border-2 text-white font-bold p-2 rounded mx-auto w-full"
+              >Kirim</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

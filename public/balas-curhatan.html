@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balas Curhatan</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="bg-white">
+    <header class="flex py-4 gap-4 w-[90%] mx-auto">
+      <img src="./img/placeholder-pic.png" alt="" class="w-12" />
+      <p class="my-auto text-lg font-bold">Siswa: Anonim</p>
+    </header>
+    <div class="w-full h-1 bg-gray-500"></div>
+    <div class="w-[90%] mx-auto py-4">
+      <textarea
+        id="isi_curhatan"
+        name="isi_curhatan"
+        placeholder="Masukkan isi curhatan"
+        oninput="this.style.height = 'auto'; this.style.height = (this.scrollHeight) + 'px';"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 h-auto"
+        required
+      ></textarea>
+      <a
+        href="listcurhat-admin.html"
+        class="bg-merah/80 mt-4 rounded-md block text-center hover:bg-merah border-white border-2 text-white font-bold p-2 rounded mx-auto w-full"
+        >Kirim</a
+      >
+    </div>
+  </body>
+</html>
